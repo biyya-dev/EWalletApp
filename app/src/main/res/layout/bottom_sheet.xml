@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+   >
+
+
+    <TextView
+        android:id="@+id/buttonOption1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="@string/add_category"
+        android:fontFamily="@font/poppinsregular"
+        android:textSize="20sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:backgroundTint="@color/addCatBgColor"
+        />
+
+<!--    <TextView-->
+<!--        android:id="@+id/buttonOption2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="start"-->
+<!--        android:text="Rename"-->
+<!--        android:fontFamily="@font/poppinsregular"-->
+<!--        android:textSize="20dp"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        />-->
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:backgroundTint="#E6E6E6"-->
+<!--        />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/buttonOption3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="start"-->
+<!--        android:text="Delete"-->
+<!--        android:fontFamily="@font/poppinsregular"-->
+<!--        android:textSize="20dp"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+
+<!--        />-->
+
+</LinearLayout>

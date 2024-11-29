@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/app_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="@string/please_rate_our_app"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAppName" />
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/ratingbarr"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_margin="@dimen/_40sdp"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:rating="0"
+            android:secondaryProgressTint="#EEEEEE"
+            android:stepSize="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCall" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_margin="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingbarr">
+
+            <Button
+                android:id="@+id/btnRateD"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_rateus_btns"
+                android:backgroundTint="@color/floatingBtnColor"
+                android:text="@string/rate_us"
+                android:fontFamily="@font/poppinsregular"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                />
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/btnExitt"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_rateus_btns"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="@string/exit"
+                android:fontFamily="@font/poppinsregular"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp" />
+
+        </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
